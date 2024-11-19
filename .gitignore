@@ -1,0 +1,3 @@
+*.spw
+__pycache__/
+*.p
