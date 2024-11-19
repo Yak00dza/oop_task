@@ -30,6 +30,13 @@ class Instructor(Person):
         for i in self.courses:
             print(i)
 
+    def list_students(self):
+        result = []
+        for i in self.courses:
+            for j in i.students:
+                result.append((j.name, i.name))
+        return result
+
 def mock():
     pass
 
